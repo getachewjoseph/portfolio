@@ -14,7 +14,7 @@ I am an undergraduate student at Purdue University with a focus on backend devel
   - A `malloc` memory management system using a free list
   - A React Native app for real-time musician posture evaluation
 - **Resume** – PDF download of my latest resume
-- **Contact** – Information to get in touch
+- **Contact** – josephgetachew8@gmail.com, www.linkedin.com/in/jgetache
 
 ## Technologies Used
 
