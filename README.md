@@ -1,1 +1,25 @@
-# portfolio
+# Joseph Getachew - Portfolio
+
+Welcome to my personal portfolio website. This site showcases selected projects, research experience, and technical skills developed through academic and independent work.
+
+## About Me
+
+I am an undergraduate student at Purdue University with a focus on backend development, systems programming, and applied machine learning. I’ve conducted research through Purdue’s Data Mine and contributed to interdisciplinary projects involving mobile development and computer vision.
+
+## Website Structure
+
+- **Home** – Brief introduction and overview
+- **Projects** – Highlights of technical and research projects, including:
+  - A simple C compiler
+  - A `malloc` memory management system using a free list
+  - A React Native app for real-time musician posture evaluation
+- **Resume** – PDF download of my latest resume
+- **Contact** – Information to get in touch
+
+## Technologies Used
+
+- HTML, CSS, JavaScript
+- React / React Native
+- C, C++, Python
+- Kotlin (Android development)
+- Git & GitHub
