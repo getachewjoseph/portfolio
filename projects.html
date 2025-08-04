@@ -1,51 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projects - Joseph Getachew</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Projects | Joseph Getachew</title>
+  <meta name="description" content="Projects by Joseph Getachew, Computer Science student at Purdue.">
+  <link rel="icon" href="/favicon.ico">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            inter: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            primary: '#1a237e',
+            accent: '#ffd700',
+          },
+        },
+      },
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
-  <header>
-    <h1>My Projects</h1>
-    <nav>
-      <a href="index.html">Home</a>
-    </nav>
-  </header>
-
-  <section>
-    <h2>Featured Projects</h2>
-    <ul>
-      <li>
-        <h3>Simple C Compiler</h3>
-        <p>A basic compiler that parses C-like syntax and emits assembly.</p>
-        <a href="https://github.com/yourusername/simple-c-compiler" target="_blank">GitHub Repo</a>
-      </li>
-
-      <li>
-        <h3>Malloc Memory Manager</h3>
-        <p>Custom memory allocator with a free list, simulating malloc/free.</p>
-        <a href="https://github.com/yourusername/malloc-project" target="_blank">GitHub Repo</a>
-      </li>
-
-      <li>
-        <h3>Portfolio Website</h3>
-        <p>A personal website to showcase my projects and experience. Built with HTML, CSS, and GitHub Pages for deployment.</p>
-        <a href="https://github.com/yourusername/portfolio" target="_blank">GitHub Repo</a>
-      </li>
-
-      <li>
-        <h3>FallGuard</h3>
-        <p>
-          Lead Technical Developer on a fall-prevention and monitoring app for elderly users,
-          built in partnership with Parkview Hyland. The app includes a fall log, exercise tracking,
-          mapping features, and user progress dashboards.
-        </p>
-        <p><strong>Tech Stack:</strong> React Native, Express.js, Node.js, PostgreSQL</p>
-        <a href="https://github.com/yourusername/fallguard" target="_blank">GitHub Repo</a>
-      </li>
-    </ul>
-  </section>
+<body class="bg-gray-50 font-inter min-h-screen flex flex-col">
+  <!-- Navigation -->
+  <nav class="bg-primary text-white shadow-lg sticky top-0 z-50 animate-fade-in-down">
+    <div class="max-w-5xl mx-auto flex items-center justify-between px-4 py-3">
+      <a href="index.html" class="text-accent font-bold text-xl tracking-wide">Joseph Getachew</a>
+      <ul class="flex space-x-6 text-base font-medium">
+        <li><a href="index.html" class="hover:text-accent transition">Home</a></li>
+        <li><a href="experience.html" class="hover:text-accent transition">Experience</a></li>
+        <li><a href="projects.html" class="hover:text-accent transition font-bold underline underline-offset-4">Projects</a></li>
+        <li><a href="skills.html" class="hover:text-accent transition">Skills</a></li>
+        <li><a href="contact.html" class="hover:text-accent transition">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main class="flex-1 max-w-4xl mx-auto px-4 py-12">
+    <h1 class="text-3xl md:text-4xl font-bold text-primary mb-8 text-center animate-fade-in-up">Projects</h1>
+    <div class="grid md:grid-cols-2 gap-8">
+      <!-- FallGuard -->
+      <div class="bg-white rounded-xl shadow-lg p-6 animate-fade-in-up hover:scale-[1.03] transition-transform duration-300 group">
+        <h2 class="text-xl font-semibold text-primary mb-2 group-hover:text-accent transition">FallGuard</h2>
+        <div class="mb-2">
+          <span class="inline-block bg-gray-200 text-primary text-xs font-semibold px-2 py-1 rounded mr-2">React</span>
+          <span class="inline-block bg-gray-200 text-primary text-xs font-semibold px-2 py-1 rounded mr-2">Node.js</span>
+          <span class="inline-block bg-gray-200 text-primary text-xs font-semibold px-2 py-1 rounded mr-2">Express</span>
+          <span class="inline-block bg-gray-200 text-primary text-xs font-semibold px-2 py-1 rounded">PostgreSQL</span>
+        </div>
+        <ul class="list-disc list-inside text-gray-700 space-y-1 mb-2">
+          <li>Full-stack web app for seniors to track fall prevention, used by 6 pilot users</li>
+          <li>Secure caregiver-patient linking, dynamic event map, and education portal</li>
+          <li>Semi-finalist, 2025 Indiana Healthcare Innovation Challenge</li>
+        </ul>
+      </div>
+      <!-- Memory Management System -->
+      <div class="bg-white rounded-xl shadow-lg p-6 animate-fade-in-up hover:scale-[1.03] transition-transform duration-300 group delay-200">
+        <h2 class="text-xl font-semibold text-primary mb-2 group-hover:text-accent transition">Memory Management System</h2>
+        <div class="mb-2">
+          <span class="inline-block bg-gray-200 text-primary text-xs font-semibold px-2 py-1 rounded">C</span>
+        </div>
+        <ul class="list-disc list-inside text-gray-700 space-y-1 mb-2">
+          <li>Custom dynamic memory allocator with malloc, free, realloc</li>
+          <li>Optimizations: boundary tags, segregated free lists, block splitting/coalescing</li>
+        </ul>
+      </div>
+      <!-- Simple C Compiler -->
+      <div class="bg-white rounded-xl shadow-lg p-6 animate-fade-in-up hover:scale-[1.03] transition-transform duration-300 group delay-400">
+        <h2 class="text-xl font-semibold text-primary mb-2 group-hover:text-accent transition">Simple C Compiler</h2>
+        <div class="mb-2">
+          <span class="inline-block bg-gray-200 text-primary text-xs font-semibold px-2 py-1 rounded mr-2">C</span>
+          <span class="inline-block bg-gray-200 text-primary text-xs font-semibold px-2 py-1 rounded mr-2">x86-64 Assembly</span>
+          <span class="inline-block bg-gray-200 text-primary text-xs font-semibold px-2 py-1 rounded mr-2">Yacc</span>
+          <span class="inline-block bg-gray-200 text-primary text-xs font-semibold px-2 py-1 rounded">Lex</span>
+        </div>
+        <ul class="list-disc list-inside text-gray-700 space-y-1 mb-2">
+          <li>Compiler for SimpleC, generating x86-64 assembly</li>
+          <li>Register allocation, full expression parsing, code generation</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+  <footer class="bg-primary text-white text-center py-4 mt-8 animate-fade-in-up">
+    &copy; 2024 Joseph Getachew
+  </footer>
+  <style>
+    .animate-fade-in-up { animation: fadeInUp 1.1s cubic-bezier(.39,.575,.565,1.000) both; }
+    .animate-fade-in-down { animation: fadeInDown 1.1s cubic-bezier(.39,.575,.565,1.000) both; }
+    .delay-200 { animation-delay: 0.2s; }
+    .delay-400 { animation-delay: 0.4s; }
+    @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: none; } }
+    @keyframes fadeInDown { from { opacity: 0; transform: translateY(-30px); } to { opacity: 1; transform: none; } }
+  </style>
 </body>
 </html>

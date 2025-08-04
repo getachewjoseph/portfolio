@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Experience | Joseph Getachew</title>
+  <meta name="description" content="Experience and leadership of Joseph Getachew, Computer Science student at Purdue.">
+  <link rel="icon" href="/favicon.ico">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            inter: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            primary: '#1a237e',
+            accent: '#ffd700',
+          },
+        },
+      },
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-50 font-inter min-h-screen flex flex-col">
+  <!-- Navigation -->
+  <nav class="bg-primary text-white shadow-lg sticky top-0 z-50 animate-fade-in-down">
+    <div class="max-w-5xl mx-auto flex items-center justify-between px-4 py-3">
+      <a href="index.html" class="text-accent font-bold text-xl tracking-wide">Joseph Getachew</a>
+      <ul class="flex space-x-6 text-base font-medium">
+        <li><a href="index.html" class="hover:text-accent transition">Home</a></li>
+        <li><a href="experience.html" class="hover:text-accent transition font-bold underline underline-offset-4">Experience</a></li>
+        <li><a href="projects.html" class="hover:text-accent transition">Projects</a></li>
+        <li><a href="skills.html" class="hover:text-accent transition">Skills</a></li>
+        <li><a href="contact.html" class="hover:text-accent transition">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main class="flex-1 max-w-3xl mx-auto px-4 py-12">
+    <h1 class="text-3xl md:text-4xl font-bold text-primary mb-8 text-center animate-fade-in-up">Experience & Leadership</h1>
+    <div class="space-y-8">
+      <!-- AIM Research Team -->
+      <div class="bg-white rounded-xl shadow-lg p-6 animate-fade-in-up hover:scale-[1.02] transition-transform duration-300">
+        <h2 class="text-xl font-semibold text-primary mb-1">AIM Research Team (Artificial Intelligence in Music)</h2>
+        <div class="text-gray-600 mb-2">Undergraduate Researcher &bull; May 2025 – Present &bull; West Lafayette, IN</div>
+        <ul class="list-disc list-inside text-gray-700 space-y-1">
+          <li>Developed posture assessment tools in Evaluator, a mobile app using computer vision for musicians</li>
+          <li>Designed a shoulder alignment classifier (92% precision), and trained a low-elbow detection model (94% accuracy)</li>
+          <li>Integrated YOLO object detection and spectrogram analysis into a multi-modal transformer pipeline</li>
+        </ul>
+      </div>
+      <!-- ColorStack Leadership -->
+      <div class="bg-white rounded-xl shadow-lg p-6 animate-fade-in-up hover:scale-[1.02] transition-transform duration-300 delay-200">
+        <h2 class="text-xl font-semibold text-primary mb-1">Academic Leader – ColorStack</h2>
+        <div class="text-gray-600 mb-2">Sep 2024 – Present</div>
+        <ul class="list-disc list-inside text-gray-700 space-y-1">
+          <li>Mentor underrepresented CS & Engineering students</li>
+          <li>Lead weekly technical workshops, coordinate networking events</li>
+        </ul>
+      </div>
+      <!-- Education -->
+      <div class="bg-white rounded-xl shadow-lg p-6 animate-fade-in-up hover:scale-[1.02] transition-transform duration-300 delay-400">
+        <h2 class="text-xl font-semibold text-primary mb-1">Education</h2>
+        <div class="text-gray-600 mb-2">Purdue University — B.S. Computer Science, Minor in Mathematics<br>West Lafayette, IN | Expected Spring 2027</div>
+        <ul class="list-disc list-inside text-gray-700 space-y-1">
+          <li>GPA: 3.7 (4x Dean’s List)</li>
+          <li>Relevant Courses: Data Structures & Algorithms, OOP, C Programming, Relational Databases, Computer Architecture, Systems Programming</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+  <footer class="bg-primary text-white text-center py-4 mt-8 animate-fade-in-up">
+    &copy; 2024 Joseph Getachew
+  </footer>
+  <style>
+    .animate-fade-in-up { animation: fadeInUp 1.1s cubic-bezier(.39,.575,.565,1.000) both; }
+    .animate-fade-in-down { animation: fadeInDown 1.1s cubic-bezier(.39,.575,.565,1.000) both; }
+    @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: none; } }
+    @keyframes fadeInDown { from { opacity: 0; transform: translateY(-30px); } to { opacity: 1; transform: none; } }
+  </style>
+</body>
+</html>
