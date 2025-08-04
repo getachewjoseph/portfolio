@@ -15,8 +15,10 @@
             inter: ['Inter', 'sans-serif'],
           },
           colors: {
-            primary: '#1a237e',
-            accent: '#ffd700',
+            primary: '#4c1d95',
+            accent: '#a855f7',
+            dark: '#0f0f23',
+            gray: '#1f2937',
           },
         },
       },
@@ -24,7 +26,7 @@
   </script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body class="bg-gray-50 font-inter min-h-screen flex flex-col">
+<body class="bg-dark text-white font-inter min-h-screen flex flex-col">
   <!-- Navigation -->
   <nav class="bg-primary text-white shadow-lg sticky top-0 z-50 animate-fade-in-down">
     <div class="max-w-5xl mx-auto flex items-center justify-between px-4 py-3">
@@ -39,23 +41,23 @@
     </div>
   </nav>
   <main class="flex-1 flex items-center justify-center px-4 py-12">
-    <div class="w-full max-w-lg mx-auto bg-white rounded-xl shadow-lg p-8 animate-fade-in-up">
+    <div class="w-full max-w-lg mx-auto bg-gray rounded-xl shadow-lg p-8 animate-fade-in-up">
       <h1 class="text-3xl font-bold text-primary mb-4 text-center">Contact Me</h1>
-      <p class="text-gray-700 text-center mb-6">Feel free to reach out for collaboration, questions, or just to connect!</p>
+      <p class="text-gray-300 text-center mb-6">Feel free to reach out for collaboration, questions, or just to connect!</p>
       <div class="flex justify-center space-x-4 mb-6">
         <a href="mailto:josephgetachew8@gmail.com" class="bg-primary text-white px-4 py-2 rounded shadow hover:bg-accent hover:text-primary transition">Email</a>
-        <a href="https://linkedin.com/in/jgetache" target="_blank" class="bg-white border border-primary text-primary px-4 py-2 rounded shadow hover:bg-primary hover:text-white transition">LinkedIn</a>
-        <a href="https://github.com/getachewjoseph" target="_blank" class="bg-white border border-primary text-primary px-4 py-2 rounded shadow hover:bg-primary hover:text-white transition">GitHub</a>
+                 <a href="https://linkedin.com/in/jgetache" target="_blank" class="bg-dark border border-accent text-accent px-4 py-2 rounded shadow hover:bg-accent hover:text-dark transition">LinkedIn</a>
+         <a href="https://github.com/getachewjoseph" target="_blank" class="bg-dark border border-accent text-accent px-4 py-2 rounded shadow hover:bg-accent hover:text-dark transition">GitHub</a>
       </div>
       <form class="space-y-4 mt-4" autocomplete="off" onsubmit="return false;">
-        <input type="text" name="name" placeholder="Your Name" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary transition" required>
-        <input type="email" name="email" placeholder="Your Email" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary transition" required>
-        <textarea name="message" rows="4" placeholder="Your Message" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary transition" required></textarea>
+                 <input type="text" name="name" placeholder="Your Name" class="w-full px-4 py-2 border border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-accent transition bg-dark text-white" required>
+         <input type="email" name="email" placeholder="Your Email" class="w-full px-4 py-2 border border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-accent transition bg-dark text-white" required>
+         <textarea name="message" rows="4" placeholder="Your Message" class="w-full px-4 py-2 border border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-accent transition bg-dark text-white" required></textarea>
         <button type="submit" class="w-full bg-primary text-white py-2 rounded font-semibold hover:bg-accent hover:text-primary transition">Send Message</button>
       </form>
     </div>
   </main>
-  <footer class="bg-primary text-white text-center py-4 mt-8 animate-fade-in-up">
+  <footer class="bg-gray text-white text-center py-4 mt-8 animate-fade-in-up">
     &copy; 2024 Joseph Getachew
   </footer>
   <style>
