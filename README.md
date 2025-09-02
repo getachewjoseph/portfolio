@@ -12,7 +12,7 @@ I am an undergraduate student at Purdue University with a focus on backend devel
 - **Projects** – Highlights of technical and research projects, including:
   - A simple C compiler
   - A `malloc` memory management system using a free list
-  - A React Native app for real-time musician posture evaluation
+  - A mobile app that connects elderly patients with caregivers
 - **Resume** – PDF download of my latest resume
 - **Contact** – josephgetachew8@gmail.com, www.linkedin.com/in/jgetache
 
